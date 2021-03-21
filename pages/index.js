@@ -83,18 +83,14 @@ export default function Home() {
     </Top>
       <SliderContainer>
       <Slide arrows={false}>
-          <CardContainer className="each-slide">
-            <Card style={{'backgroundImage': `url(${slideImages[0]})`}}>
-            </Card>
-          </CardContainer>
-          <CardContainer className="each-slide">
-            <Card style={{'backgroundImage': `url(${slideImages[1]})`}}>
-            </Card>
-          </CardContainer>
-          <CardContainer className="each-slide">
-            <Card style={{'backgroundImage': `url(${slideImages[2]})`}}>
-            </Card>
-          </CardContainer>
+        {
+         slideImages.map((image, index) => (
+          <CardContainer className="each-slide" key={index}>
+          <Card style={{'backgroundImage': `url(${slideImages[index]})`}}>
+          </Card>
+        </CardContainer>
+         )) 
+        }
         </Slide>
       </SliderContainer>
       <Introduce>
