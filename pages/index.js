@@ -16,7 +16,7 @@ const slideImages = [
 
 const Top = styled.div`
   text-align : center;
-  font-size:30px;
+  font-size:60px;
   margin-top: 30px;
   margin-bottom: 30px;
 `;
@@ -67,7 +67,7 @@ export default function Home() {
         <meta property="og:locale" content="ko_KR"></meta>
         <meta property="og:site_name" content="서계동 커피"></meta>
         <meta property="og:type" content="website"></meta>
-        <meta charset="utf-8"></meta>
+        <meta charSet="utf-8"></meta>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="description" content="시같은 공간. 만리재로156 3층. OPEN 월화수목일 11:30-18:00. 금토 11:30-20:00"/>
         <meta name="keywords" content="서계동 커피"/>
